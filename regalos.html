@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regalos</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/regalos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/arky.js"></script>
 </head>
 <body>
     <nav>
@@ -17,5 +20,15 @@
             <li><a href="canciones.html">Nuestras canciones</a></li>
         </ul>
     </nav>
+
+    <script>
+        var patito = new Patito();
+    </script>
+
+    <button onclick="patito.getColgante()">Ver Primer Regalo</button>
+    <button onclick="patito.getFlores()">Ver Segundo Regalo</button>
+    <button onclick="patito.getCarta()">Ver Tercer Regalo</button>
+    <button onclick="patito.getElementoSorpresa()">Ver Elemento Sorpresa</button>
+
 </body>
 </html>

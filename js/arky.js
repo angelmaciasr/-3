@@ -2,11 +2,103 @@
 
 class Patito{
 
-    getMyAdventureBook(){
+    getElementoSorpresa(){
+        var art = document.createElement("article");
+        art.innerHTML = `<h2> Sorpresa </h2> <h3> Corremos la San Silvestre </h3> <img src="imgs/sanSilvestreMapa.png"/><br>
+        <img src="imgs/sanSilvestre.png"/>`
+        document.body.appendChild(art);
+    }
+
+    getColgante(){
+        const fechaColgante = new Date('2024-12-07T23:00:00');
+
+        var now = new Date();
+        
+        
+        if(now > fechaColgante){
+            this.seeColgante();
+        }else{
+            var art = document.createElement("article");
+            art.innerHTML = `<h2> TODAVÍA NO PUEDES VER EL PRIMER REGALO</h2> <p>Ratita impaciente</p> <br> <br> <p>¿O sí?
+                <form>
+                    <input id="password" name="password" placeholder="Contraseña" type="text" required>
+                    <input type="button" value="Enviar" onclick="patito.checkPassword('colgante')">
+                </form>`;
+            document.body.appendChild(art);
+        }
+    }
+
+    seeColgante(){
+        var art = document.createElement("article");
+        art.innerHTML = `<h2> Primer regalo</h2> <img src="imgs/colgante.jpg"/>`;
+        document.body.appendChild(art);
+    }
+
+    getFlores(){
+        const fechaFlores = new Date('2024-12-07T23:00:00');
+
+        var now = new Date();
+
+        if(now > fechaFlores){
+            this.seeFlores()
+        }else{
+            var art = document.createElement("article");
+            art.innerHTML = `<h2> TODAVÍA NO PUEDES VER EL SEGUNDO REGALO</h2> <p>Patito impaciente</p> <br> <br> <p>¿O sí?
+                <form >
+                    <input id="password" name="password" placeholder="Contraseña" type="text" required>
+                    <input type="button" value="Enviar" onclick="patito.checkPassword('flores')">
+                </form>`;
+            document.body.appendChild(art);
+        }
+    }
+
+    seeFlores(){
+        var art = document.createElement("article");
+        art.innerHTML = `<h2> Primer regalo</h2> <img src="imgs/flores.jpg" />`;
+
+        document.body.appendChild(art);
+    }
+
+    getCarta(){
+        const fechaCarta = new Date('2024-12-07T23:00:00');
+
+        var now = new Date();
+
+        if(now > fechaCarta){
+           this.seeCarta();
+        }else{
+            var art = document.createElement("article");
+            art.innerHTML = `<h2> TODAVÍA NO PUEDES VER EL TERCER REGALO</h2> <p>Arky impaciente</p><br><br> <p>¿O sí?
+                <form >
+                    <input id="password" name="password" placeholder="Contraseña" type="text" required>
+                    <input type="button" value="Enviar" onclick="patito.checkPassword('carta')">
+                </form>`;
+            document.body.appendChild(art);
+        }
 
     }
 
-    getRegalos(){
+    seeCarta(){
+        var art = document.createElement("article");
+        art.innerHTML = `<h2> Primer regalo</h2> <img src="imgs/carta.jpg" />`;
+
+        document.body.appendChild(art);
+    }
+
+    checkPassword(regalo){
+        var psw = document.getElementById("password").value;
+
+        if(psw === "070624-torre_eiffel"){
+            if(regalo === "colgante"){
+                this.seeColgante();
+            }else if(regalo === "flores"){
+                this.seeFlores();
+            }else if(regalo === "carta"){
+                this.seeCarta();
+            }
+        }else{
+            alert("Contraseña incorrecta");
+        }
 
     }
 
@@ -20,15 +112,14 @@ class Patito{
             "f5.JPG",
             "f6.JPG",
             "f7.JPG",
-            "f8.JPG",
+            "f8.jpg",
             "f9.JPG",
-            "f10.JPG",
+            "f10.jpg",
             "f11.JPG"
         ]
 
         
         var art = document.createElement("article");
-        art.innerHTML = "<h2>Nosotros &lg3 </h2>";
 
         var car="";
 
@@ -37,7 +128,7 @@ class Patito{
         }
 
         car += "<button data-action=" + "next" + "> > </button> <button data-action=" + "prev" + "> < </button></article>";
-        art.innerHTML = `<h2>Carrusel de Imagenes</h2> ${car}`;
+        art.innerHTML = `<h2>Nosotros <3</h2> ${car}`;
 
         var main = document.createElement("main");
         main.appendChild(art)
@@ -94,4 +185,13 @@ class Patito{
             
         
     }
+
+
+    getCanciones(){
+        var art = document.createElement("article");
+        art.innerHTML = `<h2> Canciones </h2>
+            <a href="https://open.spotify.com/playlist/72OLI5m2NI6EkT1Bvx2CyK?si=C1Lta6F2Sd-q8xZHRxujw&pi=e-B6LSa8SFQveg"> Nuestras Canciones </a> `;
+        document.body.appendChild(art);
+    }
+
 }

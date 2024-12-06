@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canciones</title>
     <link rel="stylesheet" href="css/layout.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/arky.js"></script>
 </head>
 <body>
     <nav>
@@ -17,5 +19,11 @@
             <li><a href="canciones.html">Nuestras canciones</a></li>
         </ul>
     </nav>
+
+    <script>
+        var patito = new Patito();
+        patito.getCanciones();
+    </script>
+
 </body>
 </html>
