@@ -112,10 +112,35 @@ class Patito{
             "f5.JPG",
             "f6.JPG",
             "f7.JPG",
-            "f8.jpg",
+            "f8.jpeg",
             "f9.JPG",
             "f10.jpg",
-            "f11.JPG"
+            "f11.JPG",
+            "f12.jpeg",
+            "f13.jpeg",
+            "f14.jpeg",
+            "f15.jpeg",
+            "f16.jpeg",
+            "f17.jpeg",
+            "f18.jpeg",
+            "f19.jpeg",
+            "f20.jpeg",
+            "f21.jpeg",
+            "f22.jpeg",
+            "f23.jpeg",
+            "f24.jpeg",
+            "f25.jpeg",
+            "f26.jpeg",
+            "f27.jpeg",
+            "f28.jpeg",
+            "f29.jpeg",
+            "f30.jpeg",
+            "f31.jpeg",
+            "f33.jpeg",
+            "f34.jpeg",
+            "f35.jpeg",
+            "f36.jpeg",
+            "f_final.jpg",
         ]
 
         
@@ -190,7 +215,7 @@ class Patito{
     getCanciones(){
         var art = document.createElement("article");
         art.innerHTML = `<h2> Canciones </h2>
-            <a href="https://open.spotify.com/playlist/72OLI5m2NI6EkT1Bvx2CyK?si=C1Lta6F2Sd-q8xZHRxujw&pi=e-B6LSa8SFQveg"> Nuestras Canciones </a> `;
+            <a href="https://open.spotify.com/playlist/72OLI5m2NI6EkT1Bvx2CyK?si=C1Lta6F2Sd-q8xZHRxujw&pi=e-B6LSa8SFQveg" target="_blank"> Nuestras Canciones </a> `;
         document.body.appendChild(art);
     }
 
