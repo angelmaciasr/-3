@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canciones</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/canciones.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/fondo.js"></script>
     <script src="js/arky.js"></script>
 </head>
 <body>
@@ -20,6 +22,9 @@
     </nav>
 
     <script>
+        var fondo = new Fondo();
+        fondo.getPortada();
+
         var patito = new Patito();
         patito.getCanciones();
     </script>

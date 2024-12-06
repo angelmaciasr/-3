@@ -54,7 +54,7 @@ class Patito{
 
     seeFlores(){
         var art = document.createElement("article");
-        art.innerHTML = `<h2> Primer regalo</h2> <img src="imgs/flores.jpg" />`;
+        art.innerHTML = `<h2> Segundo Regalo</h2> <img src="imgs/flores.jpg" />`;
 
         document.body.appendChild(art);
     }
@@ -153,7 +153,7 @@ class Patito{
         }
 
         car += "<button data-action=" + "next" + "> > </button> <button data-action=" + "prev" + "> < </button></article>";
-        art.innerHTML = `<h2>Nosotros <3</h2> ${car}`;
+        art.innerHTML = `<h2>Nuestra historia</h2> ${car}`;
 
         var main = document.createElement("main");
         main.appendChild(art)
