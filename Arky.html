@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Sencilla</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/portada.js"></script>
 </head>
 <body>
     <nav>
@@ -16,6 +18,11 @@
             <li><a href="canciones.html">Nuestras canciones</a></li>
         </ul>
     </nav>
+
+    <script>
+        var p = new Portada()
+        p.getPortada()
+    </script>
     
 </body>
 </html>
